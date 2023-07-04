@@ -1,0 +1,65 @@
+.addAlbumList{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+ justify-content: center;
+    text-align: center;
+    z-index: 999;
+    position: relative;
+}
+.addAlbumListBox{
+   padding: 100px;
+}
+.addAlbumListBox{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.addAlbumListElement{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.numberInput , .textInput{
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    border: 1px solid gray;
+}
+.addAlbumListElement input::placeholder{
+        font-size: 15px;
+}
+.addButton{
+    cursor: pointer;
+    padding: 10px 14px;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+}
+.button {
+  position: relative;
+}
+.removeAddAlbum{
+    position: absolute;
+    overflow: hidden;
+    right: 0;       
+}
+.removeaddalbum{
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    font-size: 50px;
+    top: 0;
+    border: none;
+    outline: none;
+    transform: rotate(45deg);
+    background: transparent;
+ }

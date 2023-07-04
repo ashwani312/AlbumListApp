@@ -1,0 +1,49 @@
+.update-album-container {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   padding: 25px 30px;
+   background: white;
+}
+.updateInput {
+   display: flex;
+   flex-direction: column;
+   text-align: start;
+   gap: 20px;
+   padding: 20px;
+}
+.updateInput label {
+   font-size: 25px;
+   font-family: 'Noto Sans', sans-serif;
+}
+.updateInput input {
+   padding: 10px 20px;
+   border: none;
+   border: 1px solid gray;
+   border-radius: 10px;
+   font-family: 'Belanosima', sans-serif;
+   font-size: 20px;
+}
+/* update Btn */
+.updateBtn {
+   cursor: pointer;
+   padding: 10px;
+   font-size: 15px;
+   background-color: black;
+   color: white;
+   border: none;
+   border-radius: 7px;
+}
+/* remove cross button */
+.removeupdate {
+   cursor: pointer;
+   position: absolute;
+   right: 10px;
+   font-size: 50px;
+   top: 0;
+   border: none;
+   outline: none;
+   transform: rotate(45deg);
+   background: transparent;
+}

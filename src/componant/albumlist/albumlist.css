@@ -1,0 +1,116 @@
+.albumcontainer {
+  gap: 30px;
+  display: flex;
+  margin: auto;
+  z-index: 0;
+  text-align: center;
+  margin: auto;
+  padding: 10px 30px 20px;
+}
+
+.boxs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.box {
+  border: 1px solid gray;
+  height: 180px;
+  width: 250px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url(https://cdn.pixabay.com/photo/2023/06/19/11/10/hay-8074152_640.jpg);
+  object-fit: cover;
+  border-radius: 5px;
+  text-align: left;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  transition: 0.4s all;
+}
+.box:hover{
+  scale: 1.15;
+}
+
+.box .id {
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.box .title {
+  padding: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(249, 248, 248);
+  text-align: start;
+  font-family: 'Belanosima', sans-serif;
+}
+
+.box .buttons {
+  /* position: absolute; */
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.buttons button {
+  cursor: pointer;
+  padding: 7px 11px;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(0, 0, 12);
+  border: none;
+  border-radius: 6px;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+button.deleteBtn{
+  background-color: rgb(50, 8, 50);
+}
+.buttons button:hover{
+       background-color: rgb(255, 255, 255);
+       color: black;
+}
+button.deleteBtn:hover{
+  color: rgb(150, 7, 7);
+}
+
+
+/* ///////////////this is css for modal/////////////////// */
+.modal, .overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+.overlay {
+  background: rgba(49,49,49,0.8);
+}
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+ width: 30%;
+ background: rgba(255,255,255,0.9);
+}
+@media only screen and (max-width: 600px) {
+ .modal-content{
+  width: 80%;
+ }
+}

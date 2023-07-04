@@ -1,0 +1,38 @@
+.navbar {
+    position: sticky;
+    height: 50px;
+    background-color: rgb(78, 8, 78);
+    display: flex;
+    align-items: center;
+    padding: 0px 13px;
+   
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 500px; */
+    font-family: 'Noto Sans', sans-serif;
+}
+
+nav h2 {
+    cursor: pointer;
+   color: white;
+   font-weight: bold;
+}
+nav button{
+    position: absolute;
+    right: 50px;
+    padding: 8px 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.2s all;
+    font-family: 'Noto Sans', sans-serif;
+}
+nav button:hover{
+    background-color: rgb(99, 54, 54);
+}
