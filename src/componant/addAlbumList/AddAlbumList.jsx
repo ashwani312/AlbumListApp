@@ -27,6 +27,8 @@ export default function AddAlbumList({addAlbumToList, removeModal}) {
                        setTitle(e.target.value)
                     }}
                     />
+
+                    {/* add buutton */}
                     <button className='addButton'
                     onClick={()=>{
                         if(title.length >= 1 && userId.length >= 1){

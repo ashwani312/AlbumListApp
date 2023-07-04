@@ -2,11 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './app.css'
 import Albumlist from './componant/albumlist/Albumlist'; //AlbumList componant
 import Navbar from './componant/Navbar/Navbar'; //Navbar componant
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom"; //imported react router 
+ 
 
 
 export default function App() {
@@ -96,23 +92,18 @@ export default function App() {
   return (
     <div className="appContainer">
       <div className='app'>
-        <BrowserRouter>
           <div className="navbarComponant">
 
             {/* Navbar componant */}
             <Navbar addAlbumToList={addAlbumToList} />
           </div>
-          <Routes>
-
             {/* update the album componant */}
-            <Route path='/' element={<Albumlist
+            <Albumlist
               albums={albums}
               deleteTheAlbumList={deleteAlbumFromList}
               updateTheAlbum={updateTheAlbum}
               handleAlbumCard={handleAlbumCard}
-              albumCard={albumCard} />} />
-          </Routes>
-        </BrowserRouter>
+              albumCard={albumCard} />
       </div>
     </div>
 
